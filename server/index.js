@@ -10,7 +10,7 @@ server.on('request', (req, res) => {
 
   readFile(fp, (err, data) => {
     if (err) {
-      console.log(` ! error: ${err.message}`);
+      console.log(` !! error: ${err.message}`);
       res.writeHead(404);
       res.end();
     } else {
