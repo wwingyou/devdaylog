@@ -21,6 +21,7 @@ server.on('request', (req, res) => {
         case 'html': headers['Content-Type'] = 'text/html'; break;
         case 'css': headers['Content-Type'] = 'text/css'; break;
         case 'js': headers['Content-Type'] = 'text/javascript'; break;
+        default: headers['Content-Type'] = 'text/plain';
       }
 
       console.log(` -> offering '${fp}'`);
