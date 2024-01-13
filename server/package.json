@@ -5,11 +5,10 @@
   "main": "index.js",
   "repository": "https://github.com/UnhappyDogChew/devdaylog",
   "author": "UnhappyDogChew",
-
   "scripts": {
     "dev": "node index.js"
+  },
+  "dependencies": {
+    "postgres": "^3.4.3"
   }
 }
-
-
-
