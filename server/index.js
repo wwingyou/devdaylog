@@ -11,7 +11,10 @@ server.on('request', async (req, res) => {
     // do api actions
     if (req.url == '/api/posts') {
       const posts = await sql`select * from post`;
-      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.writeHead(200, { 
+        'Content-Type': 'application/json',
+        'access-control-allow-origin': 'http://localhost:5173'
+      });
       res.end(JSON.stringify(posts));
     }
   } else {

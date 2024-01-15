@@ -8,10 +8,17 @@ header {
   width: 100%;
 }
 
-h1 {
-  margin-top: 0.5em;
+h1, h2, h3 {
+  margin-top: 0.25em;
 }
 
 main {
 
+}
+
+.card {
+  background-color: #111;
+  border: 1px solid #111;
+  border-radius: 1em;
+  padding: 2em;
 }
