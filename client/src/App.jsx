@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Box, Card, CardBody, CardHeader, Divider, Heading, Text, VStack } from '@chakra-ui/react';
 import './App.css'
 
 function App() {
@@ -16,22 +17,23 @@ function App() {
   return (
     <>
       <header>
-        <h1>🌇 devday.log</h1>
-        <hr/>
+        <Heading as='h1' size='2xl'>🌇 devday.log</Heading>
+        <Divider/>
       </header>
       <main>
-        <p>main blog content here</p>
-        <ul>
-          {posts.map((post) => 
-            <li key={post.id}>
-              <div className="card">
-                <h2>{post.title}</h2>
-                <p>{post.content}</p>
-                <p>{post.created_date}</p>
-              </div>
-            </li>
-          )}
-        </ul>
+        <VStack spacing={4} align='stretch'>
+        {posts.map((post) => 
+          <Card colorScheme='blue' boxShadow='md'>
+            <CardHeader>
+              <Heading as='h2' size='lg'>{post.title}</Heading>
+              <Text fontSize='sm' color='gray.600'>{post.created_date}</Text>
+            </CardHeader>
+            <CardBody>
+              <Text fontSize='md'>{post.content}</Text>
+            </CardBody>
+          </Card>
+        )}
+        </VStack>
       </main>
     </>
   )
