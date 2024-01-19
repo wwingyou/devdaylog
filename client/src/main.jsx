@@ -1,27 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import 'reset-css'
+import './assets/fonts/fira_code.css'
+import './index.css'
 
-const colors = {
-  global: {
-    body: {
-      background: '#444'
-    }
-  }
-}
-
-const fonts = {
-  body: 'Thoma',
-  heading: 'Courier New'
-}
-
-const theme = extendTheme({ colors, fonts });
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
+    <App />
   </React.StrictMode>,
 ); 

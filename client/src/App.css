@@ -16,9 +16,60 @@ main {
 
 }
 
-.card {
-  background-color: #111;
-  border: 1px solid #111;
-  border-radius: 1em;
-  padding: 2em;
+.header_title {
+  font-family: 'Fira Code';
+  font-weight: 600;
+  vertical-align: bottom;
+}
+
+.header_text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: top;
+  animation-delay: 1.5s;
+  animation-duration: 1.8s;
+  animation-name: text_grow;
+  animation-timing-function: steps(1, start);
+  animation-fill-mode: backwards;
+}
+
+.header_cursor {
+  background-color: #FFFD;
+  display: inline-block;
+  height: 1em;
+  width: 0.1em;
+  vertical-align: top;
+  margin-left: 0.1em;
+  animation-name: flick;
+  animation-duration: 5s;
+  animation-timing-function: steps(1, start);
+  animation-fill-mode: forwards;
+}
+
+@keyframes text_grow {
+  0% { max-width: 0ch; }
+  1% { max-width: 0ch; } 
+  5% { max-width: 1ch; }
+  9% { max-width: 2ch; }
+  13% { max-width: 3ch; }
+  17% { max-width: 4ch; }
+  21% { max-width: 5ch; }
+  75% { max-width: 6ch; }
+  88% { max-width: 7ch; }
+  92% { max-width: 8ch; }
+  96% { max-width: 9ch; }
+  100% { max-width: 10ch; }
+}
+
+@keyframes flick {
+  from { visibility: hidden; }
+  3% { visibility: hidden; }
+  10% { visibility: visible; }
+  20% { visibility: hidden; }
+  30% { visibility: visible; }
+  70% { visibility: visible; }
+  80% { visibility: hidden; }
+  90% { visibility: visible; }
+  to { visibility: hidden; }
 }
