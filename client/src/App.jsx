@@ -3,6 +3,7 @@ import './App.css'
 
 function App() {
   const [posts, setPosts] = useState([]);
+
   useEffect(() => {
     
   }, []);
@@ -11,13 +12,16 @@ function App() {
     <>
       <header>
         <h1 className="header_title">
-          🌇 <span className="header_text">devday.log</span>
-          <span className="header_cursor"></span>
+          <a href='/'>
+            🌇 <span className="header_text">devday.log</span>
+            <span className="header_cursor"></span>
+          </a>
         </h1>
         <hr/>
       </header>
       <main>
-        <p>main blog content here</p>
+        main blog content here
+        <p><a href='https://github.com/wwingyou'>visit my github 🚀</a></p>
       </main>
     </>
   )

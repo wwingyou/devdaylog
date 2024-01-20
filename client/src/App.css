@@ -19,7 +19,11 @@ main {
 .header_title {
   font-family: 'Fira Code';
   font-weight: 600;
+  font-size: 2.25em;
   vertical-align: bottom;
+}
+.header_title a:link, .header_title a:visited {
+  color: inherit;
 }
 
 .header_text {
@@ -32,6 +36,9 @@ main {
   animation-name: text_grow;
   animation-timing-function: steps(1, start);
   animation-fill-mode: backwards;
+}
+.header_text:hover {
+  text-decoration: underline;
 }
 
 .header_cursor {
