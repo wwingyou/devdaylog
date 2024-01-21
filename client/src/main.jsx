@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
 import 'reset-css'
 import './assets/fonts/fira_code.css'
+import './theme.css'
 import './index.css'
+import './component.css'
+import App from './App.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

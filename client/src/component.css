@@ -1,0 +1,88 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  padding: 0;
+  background-color: var(--base);
+  border: 1px solid var(--surface-2);
+  border-radius: 4px;
+}
+.card:hover {
+  cursor: pointer;
+  background-color: var(--surface-0);
+}
+.card a:link {
+  color: inherit;
+}
+.card a:visited {
+  color: inherit;
+}
+
+.card_image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card_inner {
+  padding-block: 1em;
+  padding-inline: 2em;
+}
+
+.card_date {
+  color: var(--subtext-0);
+  font-size: 0.8em;
+}
+
+.card_content {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.tagstack {
+  margin-top: 0.3em;
+  display: flex;
+  --tag-primary: var(--peach);
+  --tag-secondary: var(--surface-0);
+}
+
+.tag {
+  padding-block: 0;
+  padding-inline-start: 0.8em;
+  padding-inline-end: 0;
+  font-size: 0.8em;
+  background-color: var(--tag-primary);
+  color: var(--tag-secondary);
+}
+.tag:first-child {
+  padding-inline-start: 0;
+}
+.tag:nth-child(even) {
+  background-color: var(--tag-secondary);
+  color: var(--tag-primary);
+}
+.tag_name {
+  display: inline-block;
+  padding-block: 0.3em;
+  padding-inline: 0.5em;
+  line-height: 1em;
+}
+.tag_name::before {
+  content: '#';
+}
+.tag_trail {
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0.8em solid transparent;
+  border-bottom: 0.8em solid transparent;
+  border-left: 0.8em solid var(--tag-primary);
+}
+.tag:nth-child(even) .tag_trail {
+  border-left-color: var(--tag-secondary);
+}

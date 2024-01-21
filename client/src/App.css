@@ -1,6 +1,13 @@
-#root {
-  max-width: 1280px;
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  max-width: 900px;
   padding: 2rem;
+  margin-inline: auto;
+  flex: 1;
 }
 
 header {
@@ -8,12 +15,17 @@ header {
   width: 100%;
 }
 
-h1, h2, h3 {
-  margin-top: 0.25em;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--crust);
+  width: 100vw;
+  height: 100px;
 }
 
-main {
-
+h1, h2, h3 {
+  margin-top: 0.25em;
 }
 
 .header_title {
@@ -23,7 +35,7 @@ main {
   vertical-align: bottom;
 }
 .header_title a:link, .header_title a:visited {
-  color: inherit;
+  color: var(--rosewater);
 }
 
 .header_text {
@@ -42,10 +54,10 @@ main {
 }
 
 .header_cursor {
-  background-color: #FFFD;
+  background-color: var(--rosewater);
   display: inline-block;
   height: 1em;
-  width: 0.1em;
+  width: 0.15em;
   vertical-align: top;
   margin-left: 0.1em;
   animation-name: flick;
