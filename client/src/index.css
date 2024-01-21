@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: var(--text);
-  background-color: var(--mantle);
+  background: linear-gradient(0deg, rgba(24,24,37,1) 0%, rgba(24,24,37,1) 90%, rgba(46,31,34,1) 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
