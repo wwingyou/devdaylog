@@ -31,7 +31,7 @@ h1, h2, h3 {
 .header_title {
   font-family: 'Fira Code';
   font-weight: 600;
-  font-size: 2.25em;
+  font-size: 1.65em;
   vertical-align: bottom;
 }
 .header_title a:link, .header_title a:visited {
