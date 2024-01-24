@@ -1,13 +1,8 @@
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 .main {
   max-width: 900px;
   padding: 2rem;
   margin-inline: auto;
-  flex: 1;
+  min-height: 100vh;
 }
 
 header {
