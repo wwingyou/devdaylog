@@ -1,4 +1,4 @@
-import TagStack from "./TagStack"
+import TagStack from "../tag/TagStack"
 import './Card.css'
 
 const Card = ({ date, title, tags, desc, url }) => {

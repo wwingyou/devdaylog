@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css'
-import Card from './components/Card';
-import Layout from './components/Layout';
+import Card from './components/card/Card';
+import Layout from './components/layout/Layout';
 
 function App() {
   const [posts, setPosts] = useState([

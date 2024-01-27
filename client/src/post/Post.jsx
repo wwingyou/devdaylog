@@ -1,9 +1,10 @@
 import Layout from "../components/layout/Layout"
+import './Post.css'
 
 const Post = () => {
   return (
     <Layout>
-      <div>
+      <div className="post">
         <p>#ssh #보안 </p>
         <p>SSH 키 생성 및 관리는 안전한 원격 서버 액세스를 위해 중요한 단계입니다. 이 글에서는 <code>ssh-keygen</code> 명령어를 더 스마트하게 사용하여 효율적으로 SSH 키를 생성하고 관리하는 방법에 대해 알아보겠습니다.</p>
         <h1>ssh-keygen 소개</h1>
