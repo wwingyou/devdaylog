@@ -1,4 +1,5 @@
 import TagStack from "./TagStack"
+import './Card.css'
 
 const Card = ({ date, title, tags, desc, url }) => {
   return (

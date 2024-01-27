@@ -1,4 +1,4 @@
-import Card from "./Card"
+import './Layout.css'
 
 const Layout = ({ children }) => {
   return (

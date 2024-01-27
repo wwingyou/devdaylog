@@ -4,7 +4,7 @@ import 'reset-css'
 import '../assets/fonts/fira_code.css'
 import '../theme.css'
 import '../index.css'
-import '../component.css'
+import '../components/component.css'
 import Post from './Post.jsx';
 
 

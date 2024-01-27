@@ -1,4 +1,5 @@
 import Tag from './Tag';
+import './Tag.css'
 
 const TagStack = ({ tags }) => {
   return (
